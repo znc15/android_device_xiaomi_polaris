@@ -13,7 +13,7 @@ DEVICE_PATH := device/xiaomi/polaris
 TARGET_OTA_ASSERT_DEVICE := polaris
 
 # Display
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 480
 
 # Kernel
 TARGET_KERNEL_CONFIG := polaris_defconfig
