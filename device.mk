@@ -17,6 +17,10 @@ $(call inherit-product, vendor/xiaomi/polaris/polaris-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+# Browser
+PRODUCT_PACKAGES += \
+     Via
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay 
