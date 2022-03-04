@@ -6,16 +6,11 @@
 
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
-
-DEVICE_MAINTAINER := palaych
-TARGET_EXCLUDE_LAWNCHAIR := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
+# Inherit some common Exthm stuff.
+$(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_polaris
+PRODUCT_NAME := exthm_polaris
 PRODUCT_DEVICE := polaris
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2S
