@@ -6,6 +6,9 @@
 
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
+# Maintaier
+MIKU_MASTER := Sakura
+
 # Inherit some common Miku stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 
