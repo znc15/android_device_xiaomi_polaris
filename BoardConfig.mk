@@ -16,11 +16,11 @@ TARGET_OTA_ASSERT_DEVICE := polaris
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/polaris
+TARGET_KERNEL_HEADERS := kernel/xiaomi/polaris
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 TARGET_KERNEL_CONFIG := polaris_defconfig
-TARGET_KERNEL_CLANG_VERSION := prelude
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
-KERNEL_SUPPORTS_LLVM_TOOLS := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_FORCE_PREBUILT_KERNEL := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
