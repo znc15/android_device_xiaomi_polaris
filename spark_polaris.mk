@@ -3,16 +3,13 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+# Inherit from davinci device
 $(call inherit-product, device/xiaomi/polaris/device.mk)
-
-# Maintaier
-MIKU_MASTER := Sakura
 
 # Inherit some common Miku stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 
-$(call inherit-product, vendor/miku/build/product/miku_product.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := miku_polaris
